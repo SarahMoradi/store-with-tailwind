@@ -231,6 +231,174 @@
                 </div>
               </div>
             </div>
+
+            <div x-data="{isOpenColor: true}" class="mt-2">
+              <!-- header -->
+              <div
+                @click="isOpenColor = !isOpenColor"
+                class="flex items-center justify-between mb-4 hover:bg-gray-50 rounded-lg px-2 cursor-pointer"
+              >
+                <div class="flex items-center py-2">
+                  <div class="ml-3">
+                    <span class="w-5 h-5 rounded-full bg-slate-200 absolute"></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5 relative top-1 right-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z"
+                      />
+                    </svg>
+                  </div>
+                  <span>رنگ محصول</span>
+                </div>
+                <div :class="isOpenColor === true ? 'rotate-180': '' ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 cursor-pointer text-slate-800"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- content -->
+              <div x-show="isOpenColor">
+                <div class="px-3 pb-2">
+                  <label for="apple" class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value="apple"
+                      name="apple"
+                      id="apple"
+                      class="rounded p-2 form-checkbox"
+                    />
+                    <span class="px-3">سفید</span>
+                  </label>
+                </div>
+                <div class="px-3 pb-2">
+                  <label for="apple" class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value="apple"
+                      name="apple"
+                      id="apple"
+                      class="form-checkbox rounded p-2"
+                    />
+                    <span class="px-3">مشکی متالیک</span>
+                  </label>
+                </div>
+                <div class="px-3">
+                  <label for="apple" class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value="apple"
+                      name="apple"
+                      id="apple"
+                      class="form-checkbox rounded p-2"
+                    />
+                    <span class="px-3">آبی</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div x-data="{isOpenPrice: true}" class="mt-2">
+              <!-- header -->
+              <div
+                @click="isOpenPrice = !isOpenPrice"
+                class="flex items-center justify-between mb-4 hover:bg-gray-50 rounded-lg px-2 cursor-pointer"
+              >
+                <div class="flex items-center py-2">
+                  <div class="ml-3">
+                    <span class="w-5 h-5 rounded-full bg-slate-200 absolute"></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5 relative top-1 right-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                      />
+                    </svg>
+                  </div>
+                  <span>محدوده قیمت</span>
+                </div>
+                <div :class="isOpenPrice === true ? 'rotate-180': '' ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 cursor-pointer text-slate-800"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- content -->
+              <div x-show="isOpenPrice">
+                <div class="px-3 pb-2">
+                  <label for="apple" class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value="apple"
+                      name="apple"
+                      id="apple"
+                      class="rounded p-2 form-checkbox"
+                    />
+                    <span class="px-3">۱,۰۰۰,۰۰۰ تومان</span>
+                  </label>
+                </div>
+                <div class="px-3 pb-2">
+                  <label for="apple" class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value="apple"
+                      name="apple"
+                      id="apple"
+                      class="form-checkbox rounded p-2"
+                    />
+                    <span class="px-3"> ۵,۰۰۰,۰۰۰ تومان</span>
+                  </label>
+                </div>
+                <div class="px-3">
+                  <label for="apple" class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      value="apple"
+                      name="apple"
+                      id="apple"
+                      class="form-checkbox rounded p-2"
+                    />
+                    <span class="px-3"> ۱۵,۰۰۰,۰۰۰ تومان</span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
