@@ -174,7 +174,9 @@
                   </div>
                   <span>برند محصول</span>
                 </div>
-                <div :class="isOpenBrand === true ? 'rotate-180': '' ">
+                <div
+                  :class="isOpenBrand === true ? 'rotate-180 transition-all duration-700': 'transition-all duration-700'"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -200,31 +202,31 @@
                       value="apple"
                       name="apple"
                       id="apple"
-                      class="rounded p-2 form-checkbox"
+                      class="rounded p-2 form-checkbox text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">اپل</span>
                   </label>
                 </div>
                 <div class="px-3 pb-2">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="xiaomi" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="form-checkbox rounded p-2"
+                      value="xiaomi"
+                      name="xiaomi"
+                      id="xiaomi"
+                      class="form-checkbox rounded p-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">شیائومی</span>
                   </label>
                 </div>
                 <div class="px-3">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="samsung" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="form-checkbox rounded p-2"
+                      value="samsung"
+                      name="samsung"
+                      id="samsung"
+                      class="form-checkbox rounded p-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">سامسونگ</span>
                   </label>
@@ -258,7 +260,9 @@
                   </div>
                   <span>رنگ محصول</span>
                 </div>
-                <div :class="isOpenColor === true ? 'rotate-180': '' ">
+                <div
+                  :class="isOpenColor === true ? 'rotate-180 transition-all duration-700': 'transition-all duration-700' "
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -278,37 +282,37 @@
               <!-- content -->
               <div x-show="isOpenColor">
                 <div class="px-3 pb-2">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="white" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="rounded p-2 form-checkbox"
+                      value="white"
+                      name="white"
+                      id="white"
+                      class="rounded p-2 form-checkbox text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">سفید</span>
                   </label>
                 </div>
                 <div class="px-3 pb-2">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="black" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="form-checkbox rounded p-2"
+                      value="black"
+                      name="black"
+                      id="black"
+                      class="form-checkbox rounded p-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">مشکی متالیک</span>
                   </label>
                 </div>
                 <div class="px-3">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="blue" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="form-checkbox rounded p-2"
+                      value="blue"
+                      name="blue"
+                      id="blue"
+                      class="form-checkbox rounded p-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">آبی</span>
                   </label>
@@ -342,7 +346,9 @@
                   </div>
                   <span>محدوده قیمت</span>
                 </div>
-                <div :class="isOpenPrice === true ? 'rotate-180': '' ">
+                <div
+                  :class="isOpenPrice === true ? 'rotate-180 transition-all duration-700': 'transition-all duration-700' "
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -362,37 +368,37 @@
               <!-- content -->
               <div x-show="isOpenPrice">
                 <div class="px-3 pb-2">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="priceA" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="rounded p-2 form-checkbox"
+                      value="priceA"
+                      name="priceA"
+                      id="priceA"
+                      class="rounded p-2 form-checkbox text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3">۱,۰۰۰,۰۰۰ تومان</span>
                   </label>
                 </div>
                 <div class="px-3 pb-2">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="PriceB" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="form-checkbox rounded p-2"
+                      value="PriceB"
+                      name="PriceB"
+                      id="PriceB"
+                      class="form-checkbox rounded p-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3"> ۵,۰۰۰,۰۰۰ تومان</span>
                   </label>
                 </div>
                 <div class="px-3">
-                  <label for="apple" class="flex items-center cursor-pointer">
+                  <label for="PriceC" class="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      value="apple"
-                      name="apple"
-                      id="apple"
-                      class="form-checkbox rounded p-2"
+                      value="PriceC"
+                      name="PriceC"
+                      id="PriceC"
+                      class="form-checkbox rounded p-2 text-orange-500 focus:ring-orange-500"
                     />
                     <span class="px-3"> ۱۵,۰۰۰,۰۰۰ تومان</span>
                   </label>
